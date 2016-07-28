@@ -23,5 +23,5 @@ cd "$WEB_ROOT"
 tar -czf "$WP_DIR"-"$DATE".tgz "$WP_DIR"
 echo "Backup of "$WEB_ROOT"/"$WP_DIR" is complete."
 
-#Sends an email to the $EMAIL defined on line #13
+#Sends an email to the $EMAIL defined on line #14
 /bin/mail -s "WordPress Backup Completed!" $EMAIL <<< "The backup of "$WEB_ROOT"/"$WP_DIR" is now completed. You can find your .sql and .tgz file in $WEB_ROOT. See $LOG_FILE for more details."
